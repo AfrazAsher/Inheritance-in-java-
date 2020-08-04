@@ -1,12 +1,7 @@
-/*
-Name:-Afraz Asher Asrar
-Roll Number:- 303-BSCS-19(E1)
-*/
 public class Labrador extends Dog
 {
   public String Color;
   public int breedWeight = 50;
-  // Setter methods
   public void setColor(String Color)
   {
 	  this.Color=Color;
@@ -15,7 +10,6 @@ public class Labrador extends Dog
   {
 	  this.breedWeight=breedWeight;
   }
-  // Getter methods
   public String getColor()
   {
 	  return Color;
@@ -25,11 +19,11 @@ public class Labrador extends Dog
 	  return breedWeight;
   }
   // Labrador constructor
-  public Labrador(String Color)
-  {   
+  public Labrador(String Name,String Color)
+  {       
+          super(Name);
 	  this.Color=Color;
   }
-  // BreedWeight method
   public int avgBreedWeight()
   {
       return breedWeight;
@@ -37,9 +31,7 @@ public class Labrador extends Dog
   // overiding the "Speak" method here 
   public void Speak()
   {   
-      //@override
 	  super.Speak();
-	  System.out.println("Woof");
   }
 
 }
